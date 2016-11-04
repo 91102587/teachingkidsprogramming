@@ -20,7 +20,7 @@ public class ConcentricLoop
         {
           Tortoise.move(1);
           Tortoise.turn(1);
-          Tortoise.setPenWidth(1 / 100);
+          Tortoise.setPenWidth(j / 100);
         }
       }
     }
