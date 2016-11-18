@@ -15,10 +15,10 @@ public class ChooseYourOwnAdventureVariations_01
   }
   private static void startStory()
   {
-    tellMoreStory("One morning the Tortoise woke up in a dream.");
+    tellMoreStory("One morning the Luciano woke up in a dream.");
     animateStartStory();
     String action = askAQuestion("Do you want to 'open your eyes' or 'explore' the dream?");
-    if ("wake up".equalsIgnoreCase(action))
+    if ("open your eyes".equalsIgnoreCase(action))
     {
       openYourEyes();
     }
@@ -33,43 +33,62 @@ public class ChooseYourOwnAdventureVariations_01
   }
   private static void endStory()
   {
-    MessageBox.showMessage("You don't know how to read directions. You can't play this game. The end.");
+    MessageBox.showMessage("You suck at reading directions. You can't play this game. Loser.");
   }
   private static void approachOoze()
   {
-    MessageBox.showMessage(
-        "You approach a glowing, green bucket of ooze. Worried that you will get in trouble, you pick up the bucket.");
-    //         Ask the user "Do you want to pour the ooze into the 'backyard' or 'toilet'?" --#7
-    //         If they answer "toilet" --#8.1
-    //            pourIntoToilet (recipe below) --#12.1
-    //            ------------- Recipe for pourIntoToilet --#12.2
-    //               Tell the user "As you pour the ooze into the toilet it backs up, gurgles, and explodes, covering you in radioactive waste." --#10
-    //               Ask the user "Do you want to train to be a NINJA?  'Yes' or 'HECK YES'?" --#11
-    //               If they answer "yes" --#13.1
-    //                    Tell the user "Awesome dude!  You live out the rest of your life fighting crimes and eating pizza!" --#14
-    //               Otherwise, if they answer "heck yes" --#13.2
-    //                    Tell the user "Awesome dude!  You live out the rest of your life fighting crimes and eating pizza!" --#15
-    //               Otherwise, if they answer anything else --#13.3
-    //                    endStory --#16
-    //            ------------- End of pourIntoToilet recipe --#12.3
-    //         Otherwise, if they answer "backyard" --#8.2
-    //            pourIntoBackyard (recipe below) --#19.1
-    //            ------------- Recipe for pourIntoBackyard --#19.2
-    //                Tell the user "As you walk into the backyard a net scoops you up and a giant takes you to a boiling pot of water." --#17
-    //                Ask the user "As the man starts to prepare you as soup, do you...'Scream' or 'Faint'?" --#18
-    //                If they answer "faint" --#20.1
-    //                        Tell the user "You made a delicious soup! Yum! The end." --#21
-    //                Otherwise, if they answer "scream" --#20.2
+    MessageBox.showMessage("You approach Donald Trump. Worried that you will get deported, you throw a bucket.");
+    String input = askAQuestion("Do you want to throw the bucket 'at his face' or 'at the floor and run'?");
+    if ("at the floor and run".equalsIgnoreCase(input))
+    {
+      escapePlan();
+    }
+    if ("at his face".equalsIgnoreCase(input))
+    {
+      trumpAbuse();
+    }
+    else
+    {
+      endStory();
+    }
+  }
+  private static void trumpAbuse()
+  {
+    MessageBox.showMessage("After throwing the bucket at Trumps face, the secret service starts chasing you.");
+    String input = askAQuestion(
+        "As the secret service starts to chase you, do you...'Scream, Hilary is Better!' or 'Surrender'?");
+    //                If they answer "Surrender" --#20.1
+    if ("Surrender".equalsIgnoreCase(input))
+    {
+      //                        Tell the user "You spend the rest of your life in jail reading books about Trump's success." --#21
+    }
+    //                Otherwise, if they answer "Scream,"Hilary's Better!"" --#20.2
     //                    startStory --#22
     //                Otherwise, if they answer anything else --#20.3
     //                    endStory --#23
-    //         ------------- End of pourIntoBackyard recipe --#19.3
-    //         Otherwise, if they answer anything else --#8.3
-    //            endStory --#9
+  }
+  private static void escapePlan()
+  {
+    MessageBox.showMessage("As you are running, you run into Gary Johnson.");
+    String input = askAQuestion("Do you want to make America Great Again?  'Yes' or 'That's dumb'");
+    if ("Yes".equalsIgnoreCase(input))
+    {
+      MessageBox
+          .showMessage("Trump Supporter! You live out the rest of your life making dinner for President Trump.");
+    }
+    else if ("That's dumb".equalsIgnoreCase(input))
+    {
+      MessageBox.showMessage(
+          "Good Answer!  You live out the rest of your life with free college and eating inn and out!");
+    }
+    else
+    {
+      endStory();
+    }
   }
   private static void openYourEyes()
   {
-    MessageBox.showMessage("You wake up and have a boring day. The end.");
+    MessageBox.showMessage("You wake up and the rest of your day sucks. The end.");
   }
   private static void animateStartStory()
   {
