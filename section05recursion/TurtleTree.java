@@ -49,7 +49,7 @@ public class TurtleTree
     Tortoise.turn(-60);
     drawShorterBranch(branchLength);
     Tortoise.turn(30);
-    adjustColor();
+    adjustColor(branchLength);
     Tortoise.move(-branchLength);
   }
   private static void drawShorterBranch(int branchLength)

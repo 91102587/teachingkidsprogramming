@@ -4,6 +4,7 @@ import java.awt.Color;
 
 import org.teachingextensions.approvals.lite.util.ThreadUtils;
 import org.teachingextensions.logo.Tortoise;
+import org.teachingextensions.logo.Turtle.Animals;
 import org.teachingextensions.logo.utils.ColorUtils.PenColors;
 import org.teachingextensions.logo.utils.EventUtils.MessageBox;
 
@@ -11,6 +12,7 @@ public class ChooseYourOwnAdventureVariations_01
 {
   public static void main(String[] args)
   {
+    Tortoise.setAnimal(Animals.Unicorn);
     startStory();
   }
   private static void startStory()
@@ -57,15 +59,18 @@ public class ChooseYourOwnAdventureVariations_01
     MessageBox.showMessage("After throwing the bucket at Trumps face, the secret service starts chasing you.");
     String input = askAQuestion(
         "As the secret service starts to chase you, do you...'Scream, Hilary is Better!' or 'Surrender'?");
-    //                If they answer "Surrender" --#20.1
     if ("Surrender".equalsIgnoreCase(input))
     {
-      //                        Tell the user "You spend the rest of your life in jail reading books about Trump's success." --#21
+      MessageBox.showMessage("You spend the rest of your life in jail reading books about Trump's success.");
     }
-    //                Otherwise, if they answer "Scream,"Hilary's Better!"" --#20.2
-    //                    startStory --#22
-    //                Otherwise, if they answer anything else --#20.3
-    //                    endStory --#23
+    if ("Scream, Hilary is Better!".equalsIgnoreCase(input))
+    {
+      startStory();
+    }
+    else
+    {
+      endStory();
+    }
   }
   private static void escapePlan()
   {
