@@ -15,28 +15,21 @@ public class DeepDive02Variables
   //  IMPORTANT - Do NOT change anything except the blank (___)//  
   //  
   @Test
-  public void youCanMultiplyDifferentVariables() throws Exception
-  {
-    int numberOfHomeworkProblemsToDo = 7;
-    int numberOfHomeworkProblemsDone = numberOfHomeworkProblemsToDo * 4;
-    Assert.assertEquals(28, 28);
-  }
-  @Test
   public void youCanReadVariables() throws Exception
   {
     int numberOfDesserts = 5;
-    Assert.assertEquals(numberOfDesserts, 5);
+    Assert.assertEquals(numberOfDesserts, ____);
   }
   @Test
   public void youCanSaveVariables() throws Exception
   {
-    int ickynessOfBrothers = 10;
+    int ickynessOfBrothers = ____;
     Assert.assertEquals(10, ickynessOfBrothers);
   }
   @Test
   public void youCanDoMathWithVariables() throws Exception
   {
-    int numberOfHarryPotterBooks = 3 + 4;
+    int ____ = 3 + 4;
     Assert.assertEquals(7, numberOfHarryPotterBooks);
   }
   @Test
@@ -45,14 +38,14 @@ public class DeepDive02Variables
     int milkTastiness = 6;
     addChocolate();
     milkTastiness = 10;
-    Assert.assertEquals(milkTastiness, 10);
+    Assert.assertEquals(milkTastiness, ____);
   }
   @Test
   public void variablesAreSnotStuck() throws Exception
   {
     int boogers = 4;
     blowNose();
-    boogers = 0;
+    boogers = ____;
     Assert.assertEquals(0, boogers);
   }
   @Test
@@ -60,14 +53,14 @@ public class DeepDive02Variables
   {
     int age = 11;
     celebrateBirthday();
-    age += 12;
-    Assert.assertEquals(23, age);
+    age += ____;
+    Assert.assertEquals(12, age);
   }
   @Test
   public void youCanAddInMultipleWays() throws Exception
   {
     int bakersDozen = 12;
-    bakersDozen = bakersDozen + 1;
+    bakersDozen = bakersDozen + ____;
     Assert.assertEquals(13, bakersDozen);
   }
   @Test
@@ -76,13 +69,13 @@ public class DeepDive02Variables
     int bearsInABed = 3;
     andTheLittleOneSaid("I'm lonely, come back here");
     bearsInABed++;
-    Assert.assertEquals(bearsInABed, 4);
+    Assert.assertEquals(bearsInABed, ____);
   }
   @Test
   public void youCanSubtractFromAVariable() throws Exception
   {
     int amountOfHomework = 3;
-    amountOfHomework -= 3;
+    amountOfHomework -= ____;
     Assert.assertEquals(0, amountOfHomework);
   }
   @Test
@@ -90,20 +83,20 @@ public class DeepDive02Variables
   {
     int bottlesOfBeerOnTheWall = 99;
     bottlesOfBeerOnTheWall--;
-    Assert.assertEquals(bottlesOfBeerOnTheWall, 98);
+    Assert.assertEquals(bottlesOfBeerOnTheWall, ____);
   }
   @Test
   public void youCanMultiplyVariables() throws Exception
   {
     int volumeOfMyVoice = 2;
     int volumeMyMomHears = volumeOfMyVoice * 5;
-    Assert.assertEquals(10, volumeMyMomHears);
+    Assert.assertEquals(____, volumeMyMomHears);
   }
   @Test
   public void youCanDivideVariables() throws Exception
   {
     int inches = 36;
-    int feet = 36 / 12;
+    int feet = ____ / 12;
     Assert.assertEquals(3, feet);
   }
   @Test
@@ -111,7 +104,7 @@ public class DeepDive02Variables
   {
     String xmasList = "bike";
     dreamBigger(); //This method is directly below
-    Assert.assertEquals(xmasList, "bike");
+    Assert.assertEquals(xmasList, ___);
   }
   private void dreamBigger()
   {
@@ -121,7 +114,7 @@ public class DeepDive02Variables
   public void methodsCanReturnValues() throws Exception
   {
     String bedPost = prepareForBed(); //This method is directly below
-    Assert.assertEquals(bedPost, "gum");
+    Assert.assertEquals(bedPost, ___);
   }
   public String prepareForBed()
   {
@@ -157,12 +150,6 @@ public class DeepDive02Variables
   {
   }
   private void andTheLittleOneSaid(String string)
-  {
-  }
-  private void numberOfHomeworkProblemsToDo()
-  {
-  }
-  private void numberOfHomeworkProblemsDone()
   {
   }
 }

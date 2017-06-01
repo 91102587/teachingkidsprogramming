@@ -9,6 +9,7 @@ public class SimpleSquareQuiz implements SquareQuiz
 {
   public void question1()
   {
+    //  Move the tortoise 110 pixels
     Tortoise.move(110);
   }
   public void question2()

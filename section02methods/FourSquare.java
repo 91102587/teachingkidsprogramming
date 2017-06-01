@@ -1,7 +1,6 @@
 package org.teachingkidsprogramming.section02methods;
 
 import org.teachingextensions.logo.Tortoise;
-import org.teachingextensions.logo.utils.ColorUtils.ColorWheel;
 import org.teachingextensions.logo.utils.ColorUtils.PenColors;
 
 public class FourSquare
@@ -16,12 +15,11 @@ public class FourSquare
       Tortoise.turn(90);
     }
   }
-  private static void drawSquare()
+  public static void drawSquare()
   {
     for (int i = 0; i < 4; i++)
     {
-      ColorWheel.addColor(PenColors.getRandomColor());
-      Tortoise.setPenColor(ColorWheel.getNextColor());
+      Tortoise.setPenColor(PenColors.getRandomColor());
       Tortoise.move(50);
       Tortoise.turn(90);
     }

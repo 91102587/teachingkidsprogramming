@@ -8,7 +8,7 @@ public class HiLow
 {
   public static void main(String[] args)
   {
-    int answer = NumberUtils.getRandomInt(1, 100);;
+    int answer = NumberUtils.getRandomInt(1, 100);
     for (int i = 0; i < 8; i++)
     {
       int guess = MessageBox.askForNumericalInput("What is your guess?");
